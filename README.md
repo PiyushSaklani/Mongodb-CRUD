@@ -3,7 +3,6 @@
   </head>
   <body>
     <h1>Mongodb-CRUD</h1>
-    ![MongoDB](/public/img/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png)
     <h2>This CRUD (Create, Read, Update, Delete) application uses:</h2> 
     <ul>
     <li>Node.js</li>
