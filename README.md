@@ -2,6 +2,7 @@
   <head>
   </head>
   <body>
+  ![](https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg "Mongodb")
     <h1>Mongodb-CRUD</h1>
     <h2>This CRUD (Create, Read, Update, Delete) application uses:</h2> 
     <ul>
