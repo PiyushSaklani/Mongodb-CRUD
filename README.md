@@ -3,8 +3,8 @@
   </head>
   <body>
     <h1>Mongodb-Crud</h1>
-    <img src="https://unsplash.com/photos/WiONHd_zYI4" alt="">
-    <p>This CRUD (Create, Read, Update, Delete) application uses:</p> 
+    <img src="https://unsplash.com/photos/WiONHd_zYI4" alt="img">
+    <h2>This CRUD (Create, Read, Update, Delete) application uses:</h2> 
     <ol>
     <li>Node.js</li>
     <li>Express</li>
