@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 const app = express()
 
 const port = 3000
-mongoose.connect('mongodb://127.0.0.1:27017/nodejs_crud', {useNewUrlParser: true});
+mongoose.connect('mongodb://127.0.0.1:27017/mongodbcrud', {useNewUrlParser: true});
 const db = mongoose.connection;
 db.on('error', ()=>console.log("offo!! NOT working"));
 db.once('open', ()=>{
