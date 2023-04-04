@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="/css/semantic.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/views/home.css">
+</head>
+<body>
+    <div class="wrapper">
+      <h2 id="heading">Capstone Project Details</h2>
+      <div class="glass">
+        <!-- <div class="ui massive menu">
+          <div class="ui container">
+            <div class="header item">
+              <a href="/" class="link">HOME</a>
+            </div>
+            <a class="item">
+              BLOG
+            </a>
+            <a class="item">
+              CONTACT
+            </a>
+            <a class="item">
+              ABOUT
+            </a>
+          </div>
+        </div> -->
+        <br><br><br><br><br><br><br><br><br>
+        <div class="ui container" id="testcontainer">
+          <form action="/add" class="ui form" method ="POST">
+            <div class="ui three fields">
+              <div class="field">
+                <label for="name" class="ui header black" id="test">Fullname</label>
+                <input type="text" name="name">
+              </div>
+              <div class="field">
+                <label for="director" class="ui header black" id="test">Project Title</label>
+                <input type="text" name="projecttitle">
+              </div>
+              <div class="field">
+                <label for="year" class="ui header black" id="test">No. team-members</label>
+                <input type="text" name="teammembers">
+              </div>
+              <div class="field">
+                <label for="year" class="ui header black" id="test">Section</label>
+                <input type="text" name="section">
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="ui fluid field">
+              <input type="submit" value="Submit" class="ui button blue fluid" id="testone">
+            </div>
+          </form> 
+          <br><br><br>
+          <table class="ui table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Project Title</th>
+                <th>No. team-members</th>
+                <th>Section</th>
+                <th>Edit</th>
+              <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <% clubs.forEach(function(club){ %>
+                <tr> 
+                  <td><%- club._id %></td>
+                  <td><%- club.name %></td>
+                  <td><%- club.projecttitle %></td>
+                  <td><%- club.teammembers %></td>
+                  <td><%- club.section %></td>
+                  <td><a  href="/edit/<%= club._id %>"><i class="edit outline icon"></i></a></td>
+                  <td><a  href="/delete/<%= club._id %>"><i class="eraser icon"></i></a></td>
+                  <!-- <td><a class="ui white button" href="/edit/<%= club._id %>"><i class="edit outline icon"></i></a></td>
+                  <td><a class="ui white button" href="/delete/<%= club._id %>"><i class="eraser icon"></i></a></td> -->
+                </tr>
+                
+              <% }); %>
+              
+            </tbody>
+          </table>
+        </div>
+        </div>
+    </div>
+    <script src="/public/js/semantic.min.js"></script>
+</body>
+</html>

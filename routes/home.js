@@ -3,10 +3,6 @@ const router = express.Router();
 const club = require('../models/Club');
 
 
-// router.get('/', (req,res,next) => {
-//     res.send('Express Router is working')
-// })
-
 router.get('/', (req,res,next) => {
     club.find().then((docs)=>{
         res.render('home.ejs', {clubs: docs});
@@ -18,14 +14,15 @@ router.get('/', (req,res,next) => {
 
 //Route to add elements 
 router.post('/add', async (req, res, next) => {
-    const {name, director, year} = req.body;
+    const {name, projecttitle, teammembers, section} = req.body;
 
-    console.log(name, director, year);
+    console.log(name, projecttitle, teammembers, section);
 
     const uclClub = new club({
         name,
-        director,
-        year
+        projecttitle,
+        teammembers,
+        section
     });
 
     try {
@@ -36,6 +33,14 @@ router.post('/add', async (req, res, next) => {
         console.log("Something went wrong!!");
     }
 });
+
+router.get("/homesecond", (req, res) => {
+    club.find().then((docs)=>{
+        res.render('homesecond.ejs', {clubs: docs});
+    }).catch(err=>{
+        console.log("Something is wrong!");
+    });
+  });
 
 //Route to show update elements
 router.get('/edit/:id', (req, res, next)=>{

@@ -7,14 +7,18 @@ let ClubSchema = new Schema({
         type: String,
         required : true
     },
-    director : {
+    projecttitle : {
         type: String,
         required : true
     },
-    year : {
+    teammembers : {
+        type: Number,
+        required : true
+    },
+    section : {
         type: String,
         required : true
-    }
+    },
 });
 
 module.exports = mongoose.model('club', ClubSchema);
