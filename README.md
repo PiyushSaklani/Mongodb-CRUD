@@ -2,7 +2,7 @@
   <head>
   </head>
   <body>
-    <h1>Mongodb-Crud</h1>
+    <h1>Mongodb-CRUD</h1>
     <h2>This CRUD (Create, Read, Update, Delete) application uses:</h2> 
     <ul>
     <li>Node.js</li>
