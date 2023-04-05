@@ -1,4 +1,4 @@
-# Mongodb-CRUD 
+# <img src="/assets/logo/mongodb.png" alt="MongoDB Logo" width="50"/> Mongodb-CRUD
 
 ## This CRUD (Create, Read, Update, Delete) application uses:
 - Node.js
@@ -22,3 +22,9 @@ If you are interested in contributing to our app, we would be delighted to recei
 - Commit your changes: `git commit -am 'Add some feature'`
 - Push to the branch: `git push origin new-<yourname>-<feature>`
 - Submit a pull request
+
+***
+
+## Preview
+
+![First Page](/assets/ss/firstpage.png) ![Second Page](/assets/ss/secondpage.png)
