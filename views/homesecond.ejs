@@ -13,22 +13,6 @@
     <div class="wrapper">
       <h2 id="heading">Capstone Project Details</h2>
       <div class="glass">
-        <!-- <div class="ui massive menu">
-          <div class="ui container">
-            <div class="header item">
-              <a href="/" class="link">HOME</a>
-            </div>
-            <a class="item">
-              BLOG
-            </a>
-            <a class="item">
-              CONTACT
-            </a>
-            <a class="item">
-              ABOUT
-            </a>
-          </div>
-        </div> -->
         <br><br><br><br><br><br><br><br><br>
         <div class="ui container" id="testcontainer">
           <form action="/add" class="ui form" method ="POST">
@@ -80,8 +64,6 @@
                   <td><%- club.section %></td>
                   <td><a  href="/edit/<%= club._id %>"><i class="edit outline icon"></i></a></td>
                   <td><a  href="/delete/<%= club._id %>"><i class="eraser icon"></i></a></td>
-                  <!-- <td><a class="ui white button" href="/edit/<%= club._id %>"><i class="edit outline icon"></i></a></td>
-                  <td><a class="ui white button" href="/delete/<%= club._id %>"><i class="eraser icon"></i></a></td> -->
                 </tr>
                 
               <% }); %>
