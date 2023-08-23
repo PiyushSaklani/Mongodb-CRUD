@@ -1,9 +1,6 @@
-# <img src="/assets/logo/mongodb.png" alt="MongoDB Logo" width="50"/> Mongodb-CRUD
+# TeamTracker
 
-## This CRUD (Create, Read, Update, Delete) application uses:
-- Node.js
-- Express
-- MongoDB
+TeamTracker is an application for keeping track of all the project's details and participants.
 
 ## Installation
 - Install dependencies: `npm install` or `npm i`
